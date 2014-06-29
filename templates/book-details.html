@@ -1,0 +1,11 @@
+<h2 ng-bind="book.title"/>
+<h3 ng-bind="book.subtitle"/>
+<p>
+    <ul>
+      <li ng-bind-template="ISBN: {{book.isbn}}"/>
+      <li ng-bind-template="Author: {{book.author}}"/>
+      <li>Publisher:
+          <a ng-bind="book.publisher.name" ng-href="{{book.publisher.url}}" target="_blank"/>
+      </li>
+    </ul>
+</p>
