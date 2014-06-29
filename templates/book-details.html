@@ -1,11 +1,11 @@
-<h2 ng-bind="book.title"></h2>
-<h3 ng-bind="book.subtitle"></h3>
+<h2 ng-bind="book.title" class="book.title"></h2>
+<h3 ng-bind="book.subtitle" class="book.subtitle"></h3>
 <p>
     <ul>
-      <li ng-bind-template="ISBN: {{ book.isbn }}"></li>
-      <li ng-bind-template="Author: {{book.author}}"></li>
+      <li ng-bind-template="ISBN: {{ book.isbn }}" class="book.isbn"></li>
+      <li ng-bind-template="Author: {{book.author}}" class="book.author"></li>
       <li>Publisher:
-          <a ng-bind="book.publisher.name" ng-href="{{book.publisher.url}}" target="_blank"></a>
+          <a ng-bind="book.publisher.name" ng-href="{{book.publisher.url}}" target="_blank" class="book.publisher.name"></a>
       </li>
     </ul>
 </p>
